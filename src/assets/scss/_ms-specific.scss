@@ -1,0 +1,283 @@
+body {
+  background-color: #dedede;
+  color: #333333;
+}
+
+.site-header {
+  background: #dedede url(/monsterswitch-wp/wp-content/uploads/2018/04/blue-bg.png) 50% 50% no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  min-height: 240px;
+}
+
+html.is-reveal-open,
+html.is-reveal-open body {
+  position: relative;
+}
+
+.dropdown {
+  &.menu {
+    .is-active {
+      >a {
+        color: #333333;
+      }
+    }
+  }
+}
+
+.entry-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.monster-container {
+  position: relative;
+  .logo {
+    position: absolute;
+    max-width: 70%;
+    top: 0;
+  }
+}
+
+.monstertext-container {
+  position: relative;
+  height: 220px;
+  .logo-text {
+    position: absolute;
+    top: 74px;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.swap {
+  margin-top: 50px;
+}
+
+label {
+  color: $white;
+}
+
+#msSwitch {
+  min-height: 540px;
+  background-image: url(/monsterswitch-wp/wp-content/uploads/2018/04/two-switches.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  #msSwitchOverlay {
+    width: 100%;
+    height: 540px;
+    background-color: rgba(222, 222, 222, 0);
+  }
+}
+
+.plates,
+.toggles,
+.trim {
+  margin-top: 30px;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+form {
+  width: 100%;
+  margin-top: 40px;
+  background-color: $secondary-color;
+  padding: 30px 20px 10px;
+  color: #ffffff;
+  input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #777777;
+  }
+  input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #777777;
+  }
+  input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #777777;
+  }
+  input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #777777;
+  }
+  input {
+    color: $black;
+  }
+  .response {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+}
+
+.register-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; // float: right;
+}
+
+.register-button {
+  width: 200px;
+  height: 95px;
+  background: transparent url(/monsterswitch-wp/wp-content/uploads/2018/04/monsterswitch-m-oval-bg.png) no-repeat center center;
+  background-size: contain;
+  color: $white;
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1em;
+  transition: all .3s;
+}
+
+.register-button:visited {
+  color: $white;
+  background: transparent url(/monsterswitch-wp/wp-content/uploads/2018/04/monsterswitch-m-oval-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.register-button:hover {
+  background: transparent url(/monsterswitch-wp/wp-content/uploads/2018/04/monsterswitch-m-oval-bg-hover.png) no-repeat center center;
+  background-size: contain;
+  color: #000000;
+}
+
+.register-button:hover,
+.register-button:visited,
+.register-button:active,
+.register-button:focus {
+  outline: none;
+}
+
+.footer {
+  min-height: 20px;
+  margin-top: 40px;
+  background-color: $primary-color;
+}
+
+.larger {
+  font-size: 3.6rem;
+}
+
+.main-text {
+  padding: 0;
+  padding-top: 40px;
+  h3 {
+    padding-top: 60px;
+  }
+}
+
+.wth {
+  width: 100%;
+}
+
+.what-the-heck {
+  font-size: 3.8rem;
+  line-height: 1.8;
+}
+
+.video-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.faq {
+  max-width: 460px;
+  margin: 0 auto;
+  background-color: lighten($black, 10%);
+  padding: 1rem;
+  border-radius: 10px;
+  .grid-x {
+    margin-bottom: 1rem;
+  }
+  .margin-bottom{
+    margin-bottom: 5px;
+  }
+}
+
+.txt-bubble {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  background-color: #dedede;
+  border-radius: 28px;
+  border: 2px solid $black;
+  padding: 10px 10px 0;
+  color: $black;
+}
+
+.thumbs-up {
+  max-width: 8%;
+  margin-left: 10px;
+}
+
+.footer-container {
+  border-top: none;
+}
+
+@media(max-width: 468px) {
+  .main-text {
+    h1,
+    h3 {
+      padding-bottom: 10px;
+    }
+  }
+  .border {
+    border-top: 1px solid #777777;
+    margin: 1rem 0;
+  }
+  .ms-text {
+    width: 80%;
+    margin: 10px 10% 0;
+  }
+  .what-the-heck {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+  }
+  .video-container {
+    margin-top: 1rem;
+  }
+  .register-container {
+    padding-bottom: 10px;
+    float: none;
+  }
+  .larger {
+    font-size: 2.6rem;
+  }
+  .site-header {}
+  .monstertext-container {
+    position: relative;
+    height: 80px;
+    .logo-text {
+      position: absolute;
+      top: 10px;
+    }
+  }
+  .monster-container {
+    position: relative;
+    .logo {
+      position: relative;
+      max-width: 70%;
+      margin-left: 15%;
+      top: 15px;
+    }
+  }
+  #msSwitch {
+    min-height: 360px;
+    #msSwitchOverlay {
+      height: 360px;
+    }
+  }
+}

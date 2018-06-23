@@ -1,0 +1,179 @@
+body {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    min-height: 340px;
+    background-color: #dedede;
+    border-bottom: 20px solid $primary-color;
+}
+
+.monster-container {
+    position: relative;
+    .logo {
+        position: absolute;
+        max-width: 98%;
+        top: 39px;
+    }
+}
+.monstertext-container{
+    position: relative;
+    .logo-text{
+        position: absolute;
+        top: 108px;
+    }
+}
+.center-text{
+    text-align: center;
+}
+.swap{
+    margin-top: 50px;
+}
+#msSwitch {
+    min-height: 540px;
+    background-image: url(../img/two-switches.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    #msSwitchOverlay {
+        width: 100%;
+        height: 540px;
+        background-color: rgba(222, 222, 222, 0);
+    }
+}
+
+form {
+    width: 100%;
+    margin-top: 40px;
+    background-color: $secondary-color;
+    padding: 30px 20px 10px;
+    color: #ffffff;
+    input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #777777;
+    }
+    input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #777777;
+    }
+    input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #777777;
+    }
+    input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #777777;
+    }
+    input {
+        color: $black;
+    }
+    .response {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+}
+
+.register-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // float: right;
+}
+
+.register-button {
+    width: 200px;
+    height: 95px;
+    background: transparent url(../img/monsterswitch-m-oval-bg.png) no-repeat center center;
+    background-size: contain;
+    color: $white;
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 1em;
+    transition: all .3s;
+}
+
+.register-button:visited {
+    color: $white;
+    background: transparent url(../img/monsterswitch-m-oval-bg.png) no-repeat center center;
+    background-size: contain;
+}
+
+.register-button:hover{
+    background: transparent url(../img/monsterswitch-m-oval-bg-hover.png) no-repeat center center;
+    background-size: contain;
+    color: #000000;
+}
+
+.register-button:hover,
+.register-button:visited,
+.register-button:active,
+.register-button:focus {
+    outline: none;
+}
+
+footer {
+    min-height: 20px;
+    margin-top: 40px;
+    background-color: $primary-color;
+}
+.larger {
+    font-size: 3.6rem;
+}
+.main-text {
+    padding: 0;
+    padding-top: 40px;
+
+    h3 {
+        padding-top: 60px;
+    }
+}
+
+@media(max-width: 468px) {
+
+    .main-text {
+        h1,
+        h3 {
+            padding-bottom: 10px;
+        }
+    }
+    .register-container {
+        padding-bottom: 10px;
+        float: none;
+    }
+    .larger{
+        font-size: 2.6rem;
+    }
+    header{
+        min-height: 380px;
+    }
+    .monstertext-container{
+        position: relative;
+        .logo-text{
+            position: absolute;
+            top: 10px;
+        }
+    }
+    .monster-container {
+        position: relative;
+        .logo {
+            position: absolute;
+            max-width: 340px;
+            top: 89px;
+        }
+    }
+    #msSwitch{
+        min-height: 360px;
+        #msSwitchOverlay{
+            height: 360px;
+        }
+    }
+}

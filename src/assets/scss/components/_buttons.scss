@@ -1,0 +1,20 @@
+.button, .wpcf7-submit {
+  background: $primary-color;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  color: $white;
+}
+.wpcf7-submit{
+  min-width: 140px;
+  padding: 10px 0;
+  transition: all .3s;
+  outline: none;
+  color: $black;
+  &:hover{
+    background-color: darken($primary-color, 20%);
+    color: $white;
+  }
+}
+
